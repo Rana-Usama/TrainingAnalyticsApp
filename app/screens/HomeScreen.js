@@ -50,7 +50,7 @@ function HomeScreen(props) {
                 </View>
 
                 {/* Sport Navigation Button */}
-                <TouchableOpacity activeOpacity={0.8} style={{ marginTop: RFPercentage(5), backgroundColor: Colors.darkGrey2, width: '100%', height: RFPercentage(6), justifyContent: 'center', alignItems: 'center' }} >
+                <TouchableOpacity activeOpacity={0.8} onPress={() => props.navigation.navigate("SportScreen")} style={{ marginTop: RFPercentage(5), backgroundColor: Colors.darkGrey2, width: '100%', height: RFPercentage(6), justifyContent: 'center', alignItems: 'center' }} >
                     <Text style={{ color: Colors.white, fontSize: RFPercentage(2.8), fontWeight: 'bold' }} >
                         Sportfortschritte
                     </Text>
