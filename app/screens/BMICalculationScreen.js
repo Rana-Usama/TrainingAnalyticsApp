@@ -23,6 +23,7 @@ function BMICalculationScreen(props) {
                     <Entypo name="menu" style={{ fontSize: RFPercentage(4) }} color="black" />
                 </TouchableOpacity>
             </View>
+
             {/* Title */}
             <View style={{ marginTop: RFPercentage(4), width: '80%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }} >
                 <Text style={{ color: Colors.black, fontSize: RFPercentage(2.8), fontWeight: 'bold' }} >
