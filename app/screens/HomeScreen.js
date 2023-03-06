@@ -26,7 +26,7 @@ function HomeScreen(props) {
 
             <ScrollView style={{ flex: 1, width: '100%' }} >
                 {/* BMI Navigation Button */}
-                <TouchableOpacity activeOpacity={0.8} style={{ marginTop: RFPercentage(5), backgroundColor: Colors.darkGrey2, width: '100%', height: RFPercentage(6), justifyContent: 'center', alignItems: 'center' }} >
+                <TouchableOpacity activeOpacity={0.8} onPress={() => props.navigation.navigate("BMICalculationScreen")} style={{ marginTop: RFPercentage(5), backgroundColor: Colors.darkGrey2, width: '100%', height: RFPercentage(6), justifyContent: 'center', alignItems: 'center' }} >
                     <Text style={{ color: Colors.white, fontSize: RFPercentage(2.8), fontWeight: 'bold' }} >
                         BMI berechnen
                     </Text>
