@@ -50,7 +50,7 @@ function BMICalculationScreen(props) {
                         </View>
                         {/* Second */}
                         <Text style={{ marginTop: RFPercentage(6), color: Colors.black, fontSize: RFPercentage(2.2), fontWeight: 'bold' }} >
-                            KorpergroBe
+                            Körpergröße
                         </Text>
                         <View style={{ marginLeft: RFPercentage(2), flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(1) }} >
                             <View style={{ justifyContent: 'center', alignItems: 'center', width: RFPercentage(20), height: RFPercentage(6), borderColor: Colors.darkGrey, borderWidth: RFPercentage(0.2), borderRadius: RFPercentage(1.6) }} >
@@ -62,7 +62,7 @@ function BMICalculationScreen(props) {
                         </View>
                         {/* Third */}
                         <Text style={{ marginTop: RFPercentage(6), color: Colors.black, fontSize: RFPercentage(2.2), fontWeight: 'bold' }} >
-                            Korpergewicht
+                            Körpergewicht
                         </Text>
                         <View style={{ marginLeft: RFPercentage(2), flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(1) }} >
                             <View style={{ justifyContent: 'center', alignItems: 'center', width: RFPercentage(20), height: RFPercentage(6), borderColor: Colors.darkGrey, borderWidth: RFPercentage(0.2), borderRadius: RFPercentage(1.6) }} >

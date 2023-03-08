@@ -32,16 +32,13 @@ function HomeScreen(props) {
                     </Text>
                 </TouchableOpacity>
 
-                <View style={{ backgroundColor: Colors.grey, width: '100%', height: RFPercentage(24), justifyContent: 'flex-start', alignItems: 'center' }} >
+                <View style={{ backgroundColor: '#f9f9f9', width: '100%', height: RFPercentage(24), justifyContent: 'flex-start', alignItems: 'center' }} >
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(4) }}  >
-                        <Image style={{ width: RFPercentage(8), height: RFPercentage(9) }} source={require('../../assets/Images/man.png')} />
-                        <Image style={{ width: RFPercentage(8), height: RFPercentage(9) }} source={require('../../assets/Images/man.png')} />
-                        <Image style={{ width: RFPercentage(8), height: RFPercentage(9) }} source={require('../../assets/Images/man.png')} />
-                        <Image style={{ width: RFPercentage(8), height: RFPercentage(9) }} source={require('../../assets/Images/man.png')} />
+                        <Image style={{ width: RFPercentage(30), height: RFPercentage(11) }} source={require('../../assets/Images/man.png')} />
                     </View>
                     {/* Slider */}
                     <Slider
-                        style={{ width: RFPercentage(27), height: RFPercentage(6), marginTop: RFPercentage(2) }}
+                        style={{ width: RFPercentage(30), height: RFPercentage(6), marginTop: RFPercentage(2) }}
                         minimumValue={0}
                         maximumValue={1}
                         minimumTrackTintColor="#FFFFFF"

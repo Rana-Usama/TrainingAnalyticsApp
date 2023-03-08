@@ -3,7 +3,6 @@ import { View, Text, TouchableOpacity, ScrollView, Image, StyleSheet } from 'rea
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { RFPercentage } from 'react-native-responsive-fontsize';
-import { TextInput } from 'react-native-gesture-handler';
 import CalendarPicker from 'react-native-calendar-picker';
 
 //components
@@ -52,13 +51,16 @@ function SportScreen(props) {
 
                     <View style={{ marginTop: RFPercentage(4), width: '90%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }} >
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2) }} >
-                            Golben Sei ein Detumaien
+                            Geben Sie ein Datum ein
                         </Text>
                     </View>
 
                     <View style={{ marginTop: RFPercentage(3), width: '90%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }} >
                         <View style={{ justifyContent: 'center', alignItems: 'center', width: '80%', height: RFPercentage(5), borderColor: Colors.black, borderWidth: RFPercentage(0.2), borderRadius: RFPercentage(1) }} >
-                            <TextInput placeholder='' style={{ width: '100%', marginLeft: RFPercentage(3), color: Colors.black, fontSize: RFPercentage(2) }} />
+                            {/* <TextInput placeholder='' style={{ width: '100%', marginLeft: RFPercentage(3), color: Colors.black, fontSize: RFPercentage(2) }} /> */}
+                            <Text>
+                                {selectedStartDate ? selectedStartDate.toString() : '00/00/0000'}
+                            </Text>
                         </View>
                     </View>
                     <View style={{ marginTop: RFPercentage(2) }}>
@@ -118,22 +120,23 @@ function SportScreen(props) {
 
                     <View style={{ marginTop: RFPercentage(4), width: '90%', justifyContent: 'center', alignItems: 'flex-start', alignSelf: 'center' }} >
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2) }} >
-                            Herzichen Gluckwunschi
+                            Herlichen Glukwunsch!
                         </Text>
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2), marginTop: RFPercentage(1), fontWeight: 'bold' }} >
-                            Sei haben am 20.10.2022
+                            Sie haben am {selectedStartDate ? selectedStartDate.toString() : '00/00/0000'}
+
                         </Text>
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2), marginTop: RFPercentage(1) }} >
                             30 Minuten Yoga
                         </Text>
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2), marginTop: RFPercentage(1) }} >
-                            20 Minuten CardioTraining
+                            20 Minuten Cardiotraining
                         </Text>
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2), marginTop: RFPercentage(1) }} >
                             40 Minuten Krafttraining
                         </Text>
                         <Text style={{ color: Colors.black, fontSize: RFPercentage(2), marginTop: RFPercentage(1) }} >
-                            Geschaffti
+                            geschafft!
                         </Text>
                     </View>
                 </View>

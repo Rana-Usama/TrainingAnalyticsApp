@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, Image, StyleSheet } from 'react-native'
+import React from 'react';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { RFPercentage } from 'react-native-responsive-fontsize';
-import { SelectList } from 'react-native-dropdown-select-list'
+import { SelectList } from 'react-native-dropdown-select-list';
 
 //components
 import Screen from '../components/Screen';
@@ -22,7 +22,7 @@ function GraphScreen(props) {
         <Screen style={styles.screen}>
             {/* Nav */}
             <View style={{ marginTop: RFPercentage(3), width: '90%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }} >
-                <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("HomeScreen")} >
+                <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("SportScreen")} >
                     <Ionicons name="chevron-back" style={{ fontSize: RFPercentage(3.5) }} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity activeOpacity={0.6} style={{ position: 'absolute', right: 0 }} >
@@ -62,21 +62,21 @@ function GraphScreen(props) {
 
             <View style={{ marginTop: RFPercentage(3), justifyContent: 'flex-start', alignItems: 'flex-start', width: '70%' }} >
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }} >
-                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#32cd32' }} />
+                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#f39e31' }} />
                     <Text style={{ marginLeft: RFPercentage(1), color: Colors.black, fontSize: RFPercentage(2), fontWeight: '500' }} >
                         Yoga
                     </Text>
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(2) }} >
-                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#FF69B4' }} />
+                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#fd6c1d' }} />
                     <Text style={{ marginLeft: RFPercentage(1), color: Colors.black, fontSize: RFPercentage(2), fontWeight: '500' }} >
-                        CardioTraining
+                        Cardiotraining
                     </Text>
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(2) }} >
-                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#4169E1' }} />
+                    <View style={{ width: RFPercentage(2), height: RFPercentage(2), borderRadius: RFPercentage(20), backgroundColor: '#5b9ae7' }} />
                     <Text style={{ marginLeft: RFPercentage(1), color: Colors.black, fontSize: RFPercentage(2), fontWeight: '500' }} >
-                        Kraftraining
+                        Krafttraining
                     </Text>
                 </View>
             </View>

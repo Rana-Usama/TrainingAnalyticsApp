@@ -44,10 +44,10 @@ function ResultScreen(props) {
 
             <View style={{ marginTop: RFPercentage(6), width: '90%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }} >
                 <Text style={{ color: Colors.black, fontSize: RFPercentage(2.2) }} >
-                    Sehr gutl lhr Gewicht leigt im
+                    Sehr gut! lhr Gewicht liegt im
                 </Text>
                 <Text style={{ color: Colors.black, fontSize: RFPercentage(2.2), fontWeight: 'bold', marginLeft: RFPercentage(1) }} >
-                    Normalbereich
+                    Normalbereich.
                 </Text>
             </View>
 
@@ -59,8 +59,8 @@ function ResultScreen(props) {
 
                 <ScrollView style={{ flex: 1, width: '100%' }} >
                     <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%' }} >
-                        <View style={{ flexDirection: 'row', width: '96%', justifyContent: 'flex-start', alignItems: 'center', marginTop: RFPercentage(2) }} >
-                            <View style={{ justifyContent: 'center', alignItems: 'flex-start' }} >
+                        <View style={{ flexDirection: 'row', width: '98%', justifyContent: 'flex-start', alignItems: 'center', marginTop: RFPercentage(2) }} >
+                            <View style={{ justifyContent: 'center', alignItems: 'center' }} >
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
                                     Alter
                                 </Text>
@@ -80,9 +80,9 @@ function ResultScreen(props) {
                                     15-24 jahre
                                 </Text>
                             </View>
-                            <View style={{ justifyContent: 'center', alignItems: 'flex-start', marginLeft: RFPercentage(1) }} >
+                            <View style={{ justifyContent: 'center', alignItems: 'center', marginLeft: RFPercentage(1) }} >
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
-                                    Underweight
+                                    Untergewicht
                                 </Text>
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), marginTop: RFPercentage(2) }} >
                                     {`<18`}
@@ -100,9 +100,9 @@ function ResultScreen(props) {
                                     {`<22`}
                                 </Text>
                             </View>
-                            <View style={{ justifyContent: 'center', alignItems: 'flex-start', marginLeft: RFPercentage(1) }} >
+                            <View style={{ justifyContent: 'center', alignItems: 'center', marginLeft: RFPercentage(1) }} >
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
-                                    Normalweight
+                                    Normalgewicht
                                 </Text>
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), marginTop: RFPercentage(2) }} >
                                     18-19
@@ -120,9 +120,12 @@ function ResultScreen(props) {
                                     24-25
                                 </Text>
                             </View>
-                            <View style={{ justifyContent: 'center', alignItems: 'flex-start', marginLeft: RFPercentage(1) }} >
+                            <View style={{ marginTop: RFPercentage(1), justifyContent: 'center', alignItems: 'center', marginLeft: RFPercentage(1) }} >
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
-                                    Underweight
+                                    Leichtes
+                                </Text>
+                                <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
+                                    Übergewicht
                                 </Text>
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), marginTop: RFPercentage(2) }} >
                                     17-24
@@ -140,9 +143,9 @@ function ResultScreen(props) {
                                     15-24
                                 </Text>
                             </View>
-                            <View style={{ justifyContent: 'center', alignItems: 'flex-start', marginLeft: RFPercentage(1) }} >
+                            <View style={{ justifyContent: 'center', alignItems: 'center', marginLeft: RFPercentage(0.5) }} >
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), fontWeight: 'bold' }} >
-                                    Underweight
+                                    Übergewicht
                                 </Text>
                                 <Text style={{ color: Colors.black, fontSize: RFPercentage(1.5), marginTop: RFPercentage(2) }} >
                                     {`>19`}
